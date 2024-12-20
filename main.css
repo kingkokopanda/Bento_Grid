@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    font-family: "DM Sans", "Arial", sans-serif;
+}
+
+:root{
+--Purple-100: hsl(254, 88%, 90%);
+--Purple-500: hsl(256, 67%, 59%);
+--Yellow-100: hsl(31, 66%, 93%);
+--Yellow-500: hsl(39, 100%, 71%);
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 7%);
+background-color: white
+}
+
+.main{
+    width: 100vw;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 21.5rem;
+    margin: 1.45rem auto;
+    gap: 2rem;
+}
+
+.tile-1{
+    color: var(--White);
+    background-color: var(--Purple-500);
+}
+
+.tile-1__header{
+    text-align: center;
+    font-size: clamp(2.9rem, 3rem, 4rem);
+    font-weight: 500;
+    margin: 2.4rem;
+    line-height: 92%;
+}
+
+.tile-1__header > mark{
+    color: var(--Yellow-500);
+    background-color: transparent;
+}
+
+.tile-1__image{
+    display: block;
+    margin:-1rem auto;
+    width: 55%;
+}
+
+.tile-1__signature{
+    text-align: center;
+    font-size: 1.1rem auto;
+    margin: clamp(1.5rem, 2rem, 3rem);
+}
+
+.tile-2{
+    color: var(--White);
+    background-color: var(--White);
+}
+
+.tile-2__image{
+    display: block;
+    width: clamp(93%, 100%, 123%);
+    margin: 1rem auto;
+}
+
+.tile-2__heading{
+    color: var(--Black);
+    font-size: clamp(1.5rem, 1.5rem, 2rem);
+    font-weight: 500;
+    line-height: 100%;
+    margin: 1rem;
+}
+
+.tile-3{
+    height: 13.5rem;
+    color: var(--White);
+    background-color: var(--Yellow-500);
+    overflow: hidden;
+}
+
+.tile-3__image{
+    display: block;
+    width: 13rem;
+    margin: 1rem;
+    object-fit: cover;
+}
+
+.tile-3__heading{
+    color: var(--Black);
+    font-size: clamp(1.5rem, 1.5rem, 2rem);
+    font-weight: 500;
+    line-height: 100%;
+    margin: clamp(1rem, 1rem, 1.5rem);
+}
+
+.tile-4{
+    color: var(--Black);
+    background-color: var(--Purple-100);
+}
+
+.tile-4__heading{
+    text-align: center;
+    font-size: clamp(1.66rem, 1.66rem, 2rem);
+    font-weight: 500;
+    margin: 1.9rem 0;
+    line-height: 92%;
+    letter-spacing: -0.1rem;
+}
+
+.tile-4__image{
+    display: block;
+    margin: 1rem auto;
+    width: clamp(90%, 90%, 139%);
+}
+
+.tile-4__signature{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: clamp(92%, 92%, 110%);
+    margin: 1.5rem;
+}
+
+.tile-5{
+    color: var(--White);
+    background-color: var(--Purple-500);
+}
+
+.tile-5__heading{
+    text-align: center;
+    font-size: clamp(2rem, 2rem, 2.4rem);
+    font-weight: 500;
+    margin: 2rem;
+    line-height: 92%;
+}
+
+.tile-5__image{
+    display: block;
+    margin: 1.5rem auto;
+    width: 70%;
+}
+
+.tile-6{
+    color: var(--Black);
+    background-color: var(--White);
+}
+
+.tile-6__heading{
+    font-size: clamp(3rem, 3rem, 4rem);
+    font-weight: 500;
+    margin: 1rem;
+    line-height: 92%;
+}
+
+.tile-6__image{
+    display: block;
+    margin: 1.4rem;
+    width: clamp(52%, 52%, 70%);
+}
+
+.tile-6__signature{
+    font-size: 1.1rem;
+    line-height: 92%;
+    margin: 1.4rem;
+}
+
+.tile-7{
+    color: var(--Black);
+    background-color: var(--Yellow-100);
+}
+
+.tile-7__heading{
+    font-size: clamp(2rem, 2rem, 2.5rem);
+    font-weight: 500;
+    margin: 1.44rem;
+    line-height: 92%;
+}
+
+.tile-7__heading > mark{
+    color: var(--Purple-500);
+    background-color: transparent;
+}
+
+.tile-7__image{
+    display: block;
+    margin: 1.4rem;
+    width: clamp(55%, 55%, 74%);
+}
+
+.tile-8{
+    color: var(--Black);
+    background-color: var(--Yellow-500);
+}
+
+.tile-8__heading{
+    font-size: clamp(2rem, 2rem, 2.5rem);
+    font-weight: 500;
+    margin: 1.44rem;
+    line-height: 92%;
+}
+
+.tile-8__image{
+    display: block;
+    margin: 1.4rem;
+    width: clamp(65%, 65%, 86%);
+}
+
+@media (min-width: 767px) and (max-width: 1198px){
+    .wrapper{
+        width: calc(21.5rem * 1.5);
+        text-align: center;
+    }
+
+    .tile-3__image,
+    .tile-5__image,
+    .tile-6__image,
+    .tile-7__image,
+    .tile-8__image {
+        margin: 1rem auto;
+    }
+    .tile-3__image{
+        width: 15rem;
+    }
+}
+
+@media (min-width: 1199px) {
+    .wrapper{
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: repeat(4, 16rem);
+        grid-template-rows: 20.2rem 15.5rem 15rem;
+        grid-template-areas: 
+        "item-7 item-1 item-1 item-4"
+        "item-8 item-2 item-3 item-4"
+        "item-8 item-6 item-5 item-5";
+    }
+    .tile-1{
+        grid-area: item-1;
+        height: 20.2rem;
+    }
+    .tile-1__header{
+        font-size: 4rem;
+        margin: 4rem auto;
+    }
+    .tile-1_image{
+        margin: -2.5rem auto;
+        width: 35%;
+    }
+    .tile-1_signature{
+        margin: 3rem;
+    }
+    .tile-2{
+        grid-area: item-2;
+        overflow: hidden;
+    }
+    .tile-2__image{
+        width: 110%;
+        margin: 1.6rem;
+    }
+    .tile-2__heading{
+        font-size: 2rem;
+        line-height: 89%;
+        margin: -0.5rem 1.5rem;
+    }
+    .tile-3{
+        grid-area: item-3;
+        height: auto;
+    }
+    .tile-3__heading{
+        font-size: 2rem;
+        line-height: 89%;
+        letter-spacing: -0.06rem;
+        margin: 1.5rem;
+    }
+    .tile-3__image{
+        margin: 0.6rem auto;
+    }
+    .tile-4{
+        grid-area: item-4;
+        height: 37.7rem;
+        overflow: hidden;
+    }
+    .tile-4__heading{
+        text-align: initial;
+        margin: 3rem 2rem;
+        font-size: 2rem;
+    }
+    .tile-4__image{
+        margin: -1.5rem 2rem;
+        width: 139%;
+    }
+    .tile-4__signature{
+        text-align: initial;
+        margin: 3rem 2rem;
+        font-size: 1.13rem;
+        line-height: 110%;
+    }
+    .tile-5{
+        grid-area: item-5;
+        height: 15.3rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .tile-5__image{
+        margin: 1rem 0 1rem 1.5rem;
+        width: 14rem;
+    }
+    .tile-5__heading{
+        text-align: initial;
+        margin: 1rem;
+        font-size: 2.4rem;
+    }
+    .tile-6{
+        grid-area: item-6;
+        height: 15.3rem;
+    }
+    .tile-6__heading{
+        margin: 1.3rem;
+        font-size: 4rem;
+    }
+    .tile-6__image{
+        margin: 2.6rem 1.5rem;
+        width: 70%;
+    }
+    .tile-6__signature{
+        line-height: 75%;
+        margin: 1rem 1.5rem;
+    }
+    .tile-7{
+        grid-area: item-7;
+        height: 26rem;
+    }
+    .tile-7__heading{
+        margin: 5rem 0rem 3rem 2rem;
+        line-height: 88%;
+        text-align: initial;
+        letter-spacing: -0.1rem;
+        font-size: 2.5rem;
+    }
+    .tile-8{
+        grid-area: item-8;
+        margin-top: 5.8rem;
+        height: 27rem;
+    }
+    .tile-8__heading{
+        margin: 1.44rem 1.5rem;
+        letter-spacing: -0.1rem;
+        font-size: 2.5rem;
+    }
+    .tile-8__image{
+        margin: 3.4rem 1.5rem;
+        width: 86%;
+    }
+}
