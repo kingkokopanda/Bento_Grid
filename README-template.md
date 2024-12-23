@@ -17,7 +17,7 @@ This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
-
+Creating my first bento grid using CSS and HTML was an exciting and insightful journey into front-end development. This project taught me new skills and deepened my understanding of layout systems, responsive design, and aesthetic adjustments. Here’s an overview of what I learned:
 ### The challenge
 
 - View the optimal layout for the interface depending on users device's screen size
@@ -32,7 +32,13 @@ This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.
 - Live Site URL: [Bento Grid](https://kingkokopanda.github.io/Bento_Grid/)
 
 ## My process
-
+First Experience with CSS Grid
+	•	This was my first time using the CSS Grid layout, and it proved to be a powerful tool for creating structured, modular designs.
+	•	I learned how grid tracks, gaps, and alignment properties come together to create a cohesive layout.
+	•	Understanding the flexibility of grid-template-areas and grid-template-columns/rows allowed me to experiment and achieve the desired bento-box effect.
+Previous Knowledge of rem Units Paid Off
+	•	Having used rem for scaling in previous projects gave me a solid foundation for consistent spacing and typography in this project.
+	•	I realized how beneficial rem is for responsive design, especially when paired with grid layouts.
 ### Built with
 
 - Semantic HTML5 markup
@@ -42,9 +48,9 @@ This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Leveraging Utopia for Measurements
+	•	Despite my familiarity with rem, I used Utopia to refine my measurements and maintain harmony across different screen sizes.
+	•	This tool helped me create a balance between fixed and fluid dimensions, ensuring a visually appealing and scalable design.
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
@@ -62,9 +68,8 @@ const proudOfThisFunc = () => {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+	•	I want to explore more creative ways to make my mobile layouts visually “cooler” while maintaining usability.
+	•	Ideas like incorporating animations, hover effects, or dynamic content changes could bring more life to the design
 
 ### Useful resources
 
@@ -78,6 +83,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+To myself:  This project marked a significant step in my front-end development journey. It not only strengthened my technical skills but also sparked a desire to push creative boundaries in future projects. Feedback and guidance would be greatly appreciated as I work toward refining and enhancing my bento grid designs!
