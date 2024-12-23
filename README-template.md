@@ -32,13 +32,14 @@ Creating my first bento grid using CSS and HTML was an exciting and insightful j
 - Live Site URL: [Bento Grid](https://kingkokopanda.github.io/Bento_Grid/)
 
 ## My process
-First Experience with CSS Grid
-	•	This was my first time using the CSS Grid layout, and it proved to be a powerful tool for creating structured, modular designs.
-	•	I learned how grid tracks, gaps, and alignment properties come together to create a cohesive layout.
-	•	Understanding the flexibility of grid-template-areas and grid-template-columns/rows allowed me to experiment and achieve the desired bento-box effect.
-Previous Knowledge of rem Units Paid Off
-	•	Having used rem for scaling in previous projects gave me a solid foundation for consistent spacing and typography in this project.
-	•	I realized how beneficial rem is for responsive design, especially when paired with grid layouts.
+This was my first time using the CSS Grid layout, and it proved to be a powerful tool for creating structured, modular designs.
+I learned how grid tracks, gaps, and alignment properties come together to create a cohesive layout.
+Understanding the flexibility of grid-template-areas and grid-template-columns/rows allowed me to experiment and achieve the desired bento-box effect.
+
+-Previous Knowledge of rem Units Paid Off
+Having used rem for scaling in previous projects gave me a solid foundation for consistent spacing and typography in this project.
+I realized how beneficial rem is for responsive design, especially when paired with grid layouts.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -48,28 +49,35 @@ Previous Knowledge of rem Units Paid Off
 
 ### What I learned
 
-Leveraging Utopia for Measurements
-	•	Despite my familiarity with rem, I used Utopia to refine my measurements and maintain harmony across different screen sizes.
-	•	This tool helped me create a balance between fixed and fluid dimensions, ensuring a visually appealing and scalable design.
+-Leveraging Utopia for Measurements
+Despite my familiarity with rem, I used Utopia to refine my measurements and maintain harmony across different screen sizes.
+This tool helped me create a balance between fixed and fluid dimensions, ensuring a visually appealing and scalable design.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.tile-1__header{
+    text-align: center;
+    font-size: clamp(2.9rem, 3rem, 4rem);
+    font-weight: 500;
+    margin: 2.4rem;
+    line-height: 92%;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.tile-1__header > mark{
+    color: var(--Yellow-500);
+    background-color: transparent;
+}
+
+.tile-1__image{
+    display: block;
+    margin:-1rem auto;
+    width: 55%;
 }
 ```
 
 ### Continued development
 
-	•	I want to explore more creative ways to make my mobile layouts visually “cooler” while maintaining usability.
-	•	Ideas like incorporating animations, hover effects, or dynamic content changes could bring more life to the design
+I want to explore more creative ways to make my mobile layouts visually “cooler” while maintaining usability.
+Ideas like incorporating animations, hover effects, or dynamic content changes could bring more life to the design
 
 ### Useful resources
 
